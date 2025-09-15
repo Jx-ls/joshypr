@@ -70,9 +70,10 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting web-search)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting
 
 # User configuration
 
@@ -112,4 +113,3 @@ alias compass='ELECTRON_OZONE_PLATFORM_HINT=wayland mongodb-compass'
 alias spotify='ELECTRON_FORCE_DEVICE_SCALE_FACTOR=2 spotify --ozone-platform=wayland'
 alias vlc='QT_SCALE_FACTOR=2 vlc'
 
-bindkey '^I' autosuggest-accept
